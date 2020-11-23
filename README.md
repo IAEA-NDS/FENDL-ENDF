@@ -17,11 +17,10 @@ by `git-annex` which is a tool to leverage the version
 tracking functionality of `git` for large files.
 
 If you want to download all or a subset of the ENDF files
-in this repository, you have three options:
+in this repository, you have currently two options:
 
 1. Install the command line tool `git-annex` to download the files from this repository
-2. Download the ENDF files as zip-files from the derived repository FENDL-ENDF-EXT
-3. Visit the [FENDL website](https://www-nds.iaea.org/fendl/)
+2. Visit the [FENDL website](https://www-nds.iaea.org/fendl/)
    and download the files from there
  
 ### Interacting with this repository using git-annex
@@ -42,10 +41,16 @@ If Miniconda is installed, git-annex can be installed on the command line like s
 
 After the successful installation, you can use git and git-annex to download 
 ENDF files of interest. The following instructions perform the download of
-all ENDF files in this repository:
+all ENDF files (including superseded versions) in this repository:
 ```
     git clone https://github.com/IAEA-NDS/FENDL-ENDF.git
     cd FENDL-ENDF
     git annex init
-    git annex get .
+    git annex get --all
+```
+
+Instead of downloading all ENDF files, files of interest can be selectively
+downloaded by
+```
+    git annex get <file or folder>
 ```
