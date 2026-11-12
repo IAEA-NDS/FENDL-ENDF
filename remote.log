@@ -1,0 +1,1 @@
+2cf4d611-eca6-4062-9bb9-ac099534b9e3 bucket=fendl-endf-storage datacenter=eu-north-1 encryption=none host=s3.amazonaws.com name=fendl-endf-aws-s3 port=80 storageclass=STANDARD type=S3 timestamp=1794483965s
